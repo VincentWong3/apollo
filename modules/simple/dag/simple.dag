@@ -1,0 +1,12 @@
+    module_config {
+    module_library : "/apollo/bazel-bin/modules/simple/libsimple_component.so"
+    components {
+        class_name : "SimpleComponent"
+        config {
+            name : "common"
+            readers {
+                channel: "channel/input"
+            }
+        }
+      }
+    }

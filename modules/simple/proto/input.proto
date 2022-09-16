@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package apollo.simple;
+
+message Input {
+    optional string name = 1;
+    optional int32 id = 2;
+    optional double time = 3;
+}

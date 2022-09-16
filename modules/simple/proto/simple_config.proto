@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package apollo.simple;
+
+message TopicConfig {
+    optional string input_topic = 1;
+    optional string output_topic = 2;
+}
+
+message SimpleConfig {
+    optional TopicConfig topic_config = 1;
+}
